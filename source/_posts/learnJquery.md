@@ -534,6 +534,36 @@ jQuery为我们操作内部对象栈提供了非常有用的2个方法
 利用这个DOM元素栈可以减少重复的查询和遍历的操作
 
 
+# 11. end与addBack
+## 源码实现
+```javascript
+  end: function(){
+    return this.prevObject || this.constructor(null);
+  }
+
+  jQuery.fn.extend({
+    find: function(selector){
+          jQuery.find(selector, self[i], ret);
+          //Needed because $(selector,context)becomes $(context).find(selector)
+          ret = this.pushStack(len > 1? jQuery.unique(ret):ret);
+          ret.selector = this.selector?this.selector + " " + selector: selector;
+          return ret;
+    }
+  })
+```
+>流程解析   
+1. 首先构建一个新的jQuery对象，因为constructor是指向构造器的，所以这里就等同于调用jQuery()方法了，返回了一个新的jQuery对象   
+2. 然后用jQuery.merge语句把elems节点合并到新的jQuery对象   
+3. 最后给返回的新jQuery对象添加prevObject属性
 
 
+# 12. 仿栈与队列的操作
+## 1. get方法
+```javascript
+  get: function(num){
+    return num != null?//Return just the one element from the set
+    (num < 0 ? this[num + this.length])://Return all the elements in a clean array
+    slice.call(this)
+  }
 
+```
