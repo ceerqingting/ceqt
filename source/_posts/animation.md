@@ -6,7 +6,7 @@ tags:
 # CSS3/animation
 
 ## 1. WHAT?
-![img](./animation/cheap-operations.jpg)
+![img](http://www.ceerqingting.com/2017/11/07/animation/cheap-operations.jpg)
 
 ## 2. Why?
 *From DOM to Pixels in DevTools, the process that the browser goes through:*
@@ -23,7 +23,7 @@ Composite Layers
 
 ### d.draw thie layers out to screen
 
-![img](./animation/devtools-waterfall.jpg)
+![img](http://www.ceerqingting.com/2017/11/07/animation/devtools-waterfall.jpg)
 
 **To achieve silky smooth animations you need to avoid work, and the best way to do that is to only change properties that affect compositing -- transform and opacity.**
 
@@ -32,7 +32,31 @@ The higherup you start on thie timeline waterfall the more work the browser has 
 # 3.Conclusion
 
 ### a.style affect layout
-![img](./animation/layout.jpg)
+
+| Tables        | attribute  |
+|:-------------:| -----:|
+| width	        | height |
+| padding	      | margin |
+| display	      | border-width |
+| border	      | top |      
+| position	    | font-size |
+| float	        | text-align |
+| overflow-y	  | font-weight |
+| overflow	    | left |
+| font-family	  | line-height |
+| vertical-align| right |
+| clear	        | white-space |
+| bottom	      | min-height |
+
 
 ### b.style affect paint
-![img](./animation/paint.jpg)
+| Tables        | attribute  |
+| :-------------: | -----:|
+| color	        | border-style |
+| visibility | background |
+| text-decoration	| background-image |
+| background-position	| background-repeat |
+| outline-color	| outline |
+| outline-style	| border-radius |
+| outline-width	| box-shadow |
+| background-size	|

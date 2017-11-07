@@ -315,6 +315,254 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+  <link itemprop="mainEntityOfPage" href="http://www.ceerqingting.com/2017/11/07/animation/">
+
+  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Jiang Fen">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="/uploads/avatar.png">
+  </span>
+
+  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="ceerqingting">
+    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+      <img style="display:none;" itemprop="url image" alt="ceerqingting" src="">
+    </span>
+  </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/11/07/animation/" itemprop="url">
+                  animation
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-07T14:11:58+08:00">
+                2017-11-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/11/07/animation/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/11/07/animation/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/11/07/animation/" class="leancloud_visitors" data-flag-title="animation">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="CSS3-animation"><a href="#CSS3-animation" class="headerlink" title="CSS3/animation"></a>CSS3/animation</h1><h2 id="1-WHAT"><a href="#1-WHAT" class="headerlink" title="1. WHAT?"></a>1. WHAT?</h2><p><img src="http://www.ceerqingting.com/2017/11/07/animation/cheap-operations.jpg" alt="img"></p>
+<h2 id="2-Why"><a href="#2-Why" class="headerlink" title="2. Why?"></a>2. Why?</h2><p><em>From DOM to Pixels in DevTools, the process that the browser goes through:</em></p>
+<h3 id="a-Recalculate-Style"><a href="#a-Recalculate-Style" class="headerlink" title="a.Recalculate Style"></a>a.Recalculate Style</h3><p>calculate the styles that apply to the elements</p>
+<h3 id="b-Layout"><a href="#b-Layout" class="headerlink" title="b.Layout"></a>b.Layout</h3><p>generate the geometry(position and size) and position for each element</p>
+<h3 id="c-Paint-Setup-and-Paint"><a href="#c-Paint-Setup-and-Paint" class="headerlink" title="c.Paint Setup and Paint"></a>c.Paint Setup and Paint</h3><p>fill out the pixels for each element into layers<br>Composite Layers</p>
+<h3 id="d-draw-thie-layers-out-to-screen"><a href="#d-draw-thie-layers-out-to-screen" class="headerlink" title="d.draw thie layers out to screen"></a>d.draw thie layers out to screen</h3><p><img src="http://www.ceerqingting.com/2017/11/07/animation/devtools-waterfall.jpg" alt="img"></p>
+<p><strong>To achieve silky smooth animations you need to avoid work, and the best way to do that is to only change properties that affect compositing – transform and opacity.</strong></p>
+<p>The higherup you start on thie timeline waterfall the more work the browser has to do to get pixels on to the screen.</p>
+<h1 id="3-Conclusion"><a href="#3-Conclusion" class="headerlink" title="3.Conclusion"></a>3.Conclusion</h1><h3 id="a-style-affect-layout"><a href="#a-style-affect-layout" class="headerlink" title="a.style affect layout"></a>a.style affect layout</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">Tables</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">width</td>
+<td style="text-align:right">height</td>
+</tr>
+<tr>
+<td style="text-align:center">padding</td>
+<td style="text-align:right">margin</td>
+</tr>
+<tr>
+<td style="text-align:center">display</td>
+<td style="text-align:right">border-width</td>
+</tr>
+<tr>
+<td style="text-align:center">border</td>
+<td style="text-align:right">top</td>
+</tr>
+<tr>
+<td style="text-align:center">position</td>
+<td style="text-align:right">font-size</td>
+</tr>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:right">text-align</td>
+</tr>
+<tr>
+<td style="text-align:center">overflow-y</td>
+<td style="text-align:right">font-weight</td>
+</tr>
+<tr>
+<td style="text-align:center">overflow</td>
+<td style="text-align:right">left</td>
+</tr>
+<tr>
+<td style="text-align:center">font-family</td>
+<td style="text-align:right">line-height</td>
+</tr>
+<tr>
+<td style="text-align:center">vertical-align</td>
+<td style="text-align:right">right</td>
+</tr>
+<tr>
+<td style="text-align:center">clear</td>
+<td style="text-align:right">white-space</td>
+</tr>
+<tr>
+<td style="text-align:center">bottom</td>
+<td style="text-align:right">min-height</td>
+</tr>
+</tbody>
+</table>
+<h3 id="b-style-affect-paint"><a href="#b-style-affect-paint" class="headerlink" title="b.style affect paint"></a>b.style affect paint</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">Tables</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">color</td>
+<td style="text-align:right">border-style</td>
+</tr>
+<tr>
+<td style="text-align:center">visibility</td>
+<td style="text-align:right">background</td>
+</tr>
+<tr>
+<td style="text-align:center">text-decoration</td>
+<td style="text-align:right">background-image</td>
+</tr>
+<tr>
+<td style="text-align:center">background-position</td>
+<td style="text-align:right">background-repeat</td>
+</tr>
+<tr>
+<td style="text-align:center">outline-color</td>
+<td style="text-align:right">outline</td>
+</tr>
+<tr>
+<td style="text-align:center">outline-style</td>
+<td style="text-align:right">border-radius</td>
+</tr>
+<tr>
+<td style="text-align:center">outline-width</td>
+<td style="text-align:right">box-shadow</td>
+</tr>
+<tr>
+<td style="text-align:center">background-size</td>
+</tr>
+</tbody>
+</table>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
   <link itemprop="mainEntityOfPage" href="http://www.ceerqingting.com/2017/06/04/learnJquery/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -534,7 +782,16 @@
 <li>.addBack()<br>调用它会在栈中回溯一个位置，然后把两个位置上的元素组合起来，并把这个新的组合之后的元素集推入栈的上方  </li>
 </ul>
 <p>利用这个DOM元素栈可以减少重复的查询和遍历的操作</p>
-
+<h1 id="11-end与addBack"><a href="#11-end与addBack" class="headerlink" title="11. end与addBack"></a>11. end与addBack</h1><h2 id="源码实现"><a href="#源码实现" class="headerlink" title="源码实现"></a>源码实现</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">end: <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="keyword">this</span>.prevObject || <span class="keyword">this</span>.constructor(<span class="literal">null</span>);</div><div class="line">&#125;</div><div class="line"></div><div class="line">jQuery.fn.extend(&#123;</div><div class="line">  <span class="attr">find</span>: <span class="function"><span class="keyword">function</span>(<span class="params">selector</span>)</span>&#123;</div><div class="line">        jQuery.find(selector, self[i], ret);</div><div class="line">        <span class="comment">//Needed because $(selector,context)becomes $(context).find(selector)</span></div><div class="line">        ret = <span class="keyword">this</span>.pushStack(len &gt; <span class="number">1</span>? jQuery.unique(ret):ret);</div><div class="line">        ret.selector = <span class="keyword">this</span>.selector?<span class="keyword">this</span>.selector + <span class="string">" "</span> + selector: selector;</div><div class="line">        <span class="keyword">return</span> ret;</div><div class="line">  &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>流程解析   </p>
+<ol>
+<li>首先构建一个新的jQuery对象，因为constructor是指向构造器的，所以这里就等同于调用jQuery()方法了，返回了一个新的jQuery对象   </li>
+<li>然后用jQuery.merge语句把elems节点合并到新的jQuery对象   </li>
+<li>最后给返回的新jQuery对象添加prevObject属性</li>
+</ol>
+</blockquote>
+<h1 id="12-仿栈与队列的操作"><a href="#12-仿栈与队列的操作" class="headerlink" title="12. 仿栈与队列的操作"></a>12. 仿栈与队列的操作</h1><h2 id="1-get方法"><a href="#1-get方法" class="headerlink" title="1. get方法"></a>1. get方法</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">get: <span class="function"><span class="keyword">function</span>(<span class="params">num</span>)</span>&#123;</div><div class="line">  <span class="keyword">return</span> num != <span class="literal">null</span>?<span class="comment">//Return just the one element from the set</span></div><div class="line">  (num &lt; <span class="number">0</span> ? <span class="keyword">this</span>[num + <span class="keyword">this</span>.length]):<span class="keyword">this</span>[num]<span class="comment">//Return all the elements in a clean array</span></div><div class="line">  slice.call(<span class="keyword">this</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
           
         
       
@@ -610,7 +867,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
