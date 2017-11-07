@@ -1,7 +1,8 @@
 ---
 title: learnJquery
-date: 2017-06-04 15:58:36
+date: 2015-06-04 15:58:36
 tags:
+categories: jquery
 ---
 # 1. jQuery整体架构
 ![img](http://www.ceerqingting.com/2017/06/04/learnJquery/jquery.jpg)
@@ -31,7 +32,7 @@ tags:
             return jQuery;
      }));
 ```
-
+<!-- more -->
 ## 1. 五大块
 - 选择器
 - DOM操作

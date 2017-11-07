@@ -1,13 +1,15 @@
 ---
 title: animation
-date: 2017-11-07 14:11:58
+date: 2015-11-07 14:11:58
 tags:
+categories: css
 ---
 # CSS3/animation
 
 ## 1. WHAT?
 ![img](http://www.ceerqingting.com/2017/11/07/animation/cheap-operations.jpg)
 
+<!-- more -->
 ## 2. Why?
 *From DOM to Pixels in DevTools, the process that the browser goes through:*
 

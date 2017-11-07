@@ -1,7 +1,8 @@
 ---
 title: markdown
-date: 2017-11-07 16:51:57
+date: 2015-11-07 16:51:57
 tags:
+categories: markdown
 ---
 # 1.标题
 ```javascript
@@ -27,6 +28,7 @@ tags:
 ```
 *注：- 、 1.和文本之间保留一个空格*
 
+<!-- more -->
 # 3.链接和图片
 ```javascript
   [简书](http://www.jianshu.com)

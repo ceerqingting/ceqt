@@ -5,6 +5,10 @@
   "hexo": {
     "version": "3.2.2"
   },
+  "scripts": {
+    "dev": "hexo generate&&hexo server",
+    "build": "hexo deploy"
+  },
   "dependencies": {
     "hexo": "^3.2.0",
     "hexo-algolia": "^0.1.1",
