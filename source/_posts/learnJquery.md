@@ -562,7 +562,7 @@ jQuery为我们操作内部对象栈提供了非常有用的2个方法
 ```javascript
   get: function(num){
     return num != null?//Return just the one element from the set
-    (num < 0 ? this[num + this.length])://Return all the elements in a clean array
+    (num < 0 ? this[num + this.length]):this[num]//Return all the elements in a clean array
     slice.call(this)
   }
 
