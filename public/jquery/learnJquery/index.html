@@ -97,7 +97,7 @@
 <meta property="og:image" content="http://www.ceerqingting.com/images/selector.jpg">
 <meta property="og:image" content="http://www.ceerqingting.com/images/init.jpg">
 <meta property="og:image" content="http://www.ceerqingting.com/images/prevObject.jpg">
-<meta property="og:updated_time" content="2017-11-07T16:53:56.000Z">
+<meta property="og:updated_time" content="2017-11-07T17:26:23.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="learnJquery">
 <meta name="twitter:description" content="1. jQuery整体架构123456789101112131415161718192021222324//函数自执行(function(global, factory) &amp;#123;   factory(global);      &amp;#125;(typeof window !== &quot;undefined&quot; ? window : this, function(window, noGlobal) &amp;#">
@@ -441,6 +441,7 @@
 
       
         <h1 id="1-jQuery整体架构"><a href="#1-jQuery整体架构" class="headerlink" title="1. jQuery整体架构"></a>1. jQuery整体架构</h1><p><img src="http://www.ceerqingting.com/2017/06/04/learnJquery/jquery.jpg" alt="img"><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//函数自执行</span></div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params">global, factory</span>) </span>&#123;</div><div class="line">   factory(global);</div><div class="line">      &#125;(<span class="keyword">typeof</span> <span class="built_in">window</span> !== <span class="string">"undefined"</span> ? <span class="built_in">window</span> : <span class="keyword">this</span>, <span class="function"><span class="keyword">function</span>(<span class="params">window, noGlobal</span>) </span>&#123;</div><div class="line">          <span class="keyword">var</span> jQuery = <span class="function"><span class="keyword">function</span>(<span class="params"> selector, context </span>) </span>&#123;</div><div class="line">          <span class="keyword">return</span> <span class="keyword">new</span> jQuery.fn.init( selector, context );</div><div class="line">        &#125;;</div><div class="line">        jQuery.fn = jQuery.prototype = &#123;&#125;;</div><div class="line">        <span class="comment">// 核心方法</span></div><div class="line">        <span class="comment">// 回调系统</span></div><div class="line">        <span class="comment">// 异步队列</span></div><div class="line">        <span class="comment">// 数据缓存</span></div><div class="line">        <span class="comment">// 队列操作</span></div><div class="line">        <span class="comment">// 选择器引</span></div><div class="line">        <span class="comment">// 属性操作</span></div><div class="line">        <span class="comment">// 节点遍历</span></div><div class="line">        <span class="comment">// 文档处理</span></div><div class="line">        <span class="comment">// 样式操作</span></div><div class="line">        <span class="comment">// 属性操作</span></div><div class="line">        <span class="comment">// 事件体系</span></div><div class="line">        <span class="comment">// AJAX交互</span></div><div class="line">        <span class="comment">// 动画引擎</span></div><div class="line">        <span class="keyword">return</span> jQuery;</div><div class="line"> &#125;));</div></pre></td></tr></table></figure></p>
+<a id="more"></a>
 <h2 id="1-五大块"><a href="#1-五大块" class="headerlink" title="1. 五大块"></a>1. 五大块</h2><ul>
 <li>选择器</li>
 <li>DOM操作</li>
@@ -697,7 +698,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -706,7 +707,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>

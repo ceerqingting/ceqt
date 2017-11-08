@@ -7,7 +7,7 @@ categories: css
 # CSS3/animation
 
 ## 1. WHAT?
-![img](http://www.ceerqingting.com/2017/11/07/animation/cheap-operations.jpg)
+![img](./animation/cheap-operations.jpg)
 
 <!-- more -->
 ## 2. Why?
@@ -24,8 +24,7 @@ fill out the pixels for each element into layers
 Composite Layers
 
 ### d.draw thie layers out to screen
-
-![img](http://www.ceerqingting.com/2017/11/07/animation/devtools-waterfall.jpg)
+![img](./animation/devtools-waterfall.jpg)
 
 **To achieve silky smooth animations you need to avoid work, and the best way to do that is to only change properties that affect compositing -- transform and opacity.**
 
